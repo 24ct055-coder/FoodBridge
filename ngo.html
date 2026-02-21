@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodBridge - NGO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>🌱 FoodBridge</h2>
+    <div>
+    <a href="index.html">Home</a>
+    <a href="donor.html">Donor</a>
+    <a href="ngo.html">NGO</a>
+    <a href="volunteer.html">Volunteer <span id="volunteerNavBadge" class="notif-badge"></span></a>
+    <a href="admin.html">Admin</a>
+</div>
+</nav>
+
+<section class="page-header">
+    <h1>Available Donations</h1>
+</section>
+
+<section class="filter-section">
+    <select id="filterLocation">
+        <option value="">All Locations</option>
+        <option>Kochi</option>
+        <option>Ernakulam</option>
+        <option>Aluva</option>
+        <option>Thrissur</option>
+    </select>
+
+    <select id="sortUrgency">
+        <option value="">Sort</option>
+        <option value="urgent">Most Urgent</option>
+        <option value="quantity">Largest Quantity</option>
+    </select>
+</section>
+
+<section id="ngoList" class="card-container"></section>
+
+<script src="ngo.js"></script>
+</body>
+</html>

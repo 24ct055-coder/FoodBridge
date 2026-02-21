@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donor Panel - FoodBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1>🌱 FoodBridge - Donor</h1>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+    </div>
+</nav>
+
+<section class="profile-section">
+    <div class="profile-card" id="individualProfile">
+        <div class="profile-avatar">🧑‍🍳</div>
+        <div class="profile-info">
+            <h3 id="donorName">Donor</h3>
+            <p>🏅 Trust Score: <strong id="donorTrustScore">0</strong></p>
+            <p id="donorBadge">🥉 New Donor</p>
+            <p>📦 Total Donations: <strong id="totalDonations">0</strong></p>
+        </div>
+    </div>
+
+    <div class="profile-card" id="businessProfile" style="display:none;">
+        <div class="profile-avatar">🏨</div>
+        <div class="profile-info">
+            <h3 id="businessProfileName">Restaurant / Hotel</h3>
+            <p>🏅 Trust Score: <strong id="businessTrustScore">0</strong></p>
+            <p id="businessBadge">🥉 New Partner</p>
+            <p>📦 Total Donations: <strong id="businessTotalDonations">0</strong></p>
+            <p>🕐 Usual Pickup Time: <strong id="businessPickupTime">-</strong></p>
+            <p>📅 Donation Pattern: <strong id="businessSchedule">-</strong></p>
+        </div>
+    </div>
+</section>
+
+<section class="form-section">
+    <h2>Post Surplus Food</h2>
+
+    <form id="donorForm">
+
+        <!-- Donor Type Toggle -->
+        <div class="donor-type-toggle">
+            <button type="button" id="individualBtn" class="toggle-btn active" onclick="setDonorType('individual')">👤 Individual</button>
+            <button type="button" id="businessBtn" class="toggle-btn" onclick="setDonorType('business')">🏨 Restaurant / Hotel</button>
+        </div>
+
+        <!-- Business Fields -->
+        <div id="businessFields" style="display:none;">
+    <input type="text" id="businessName" placeholder="Business Name (e.g. Hotel Taj)">
+    <select id="scheduleType">
+        <option value="">How often do you donate?</option>
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+        <option value="occasionally">Occasionally</option>
+    </select>
+    <input type="time" id="preferredTime" placeholder="Usual surplus time (e.g. 9:00 PM)">
+    <input type="text" id="avgServes" placeholder="Avg. people served per donation (e.g. 50)">
+</div>
+
+        <!-- Food Items -->
+        <div id="foodItemsContainer">
+            <div class="food-item-row">
+                <input type="text" class="foodNameInput" placeholder="Food Name" required>
+                <input type="number" class="servesInput" placeholder="Serves" required>
+                <select class="foodTypeInput">
+                    <option value="">Food Type</option>
+                    <option>Veg 🌿</option>
+                    <option>Non-Veg 🍗</option>
+                    <option>Bakery 🥐</option>
+                    <option>Packaged 📦</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="button" class="btn secondary-btn" id="addItemBtn" onclick="addFoodRow()" style="display:none;">
+            + Add Another Item
+        </button>
+
+        <!-- Location -->
+        <select id="location" required>
+            <option value="">Select Location</option>
+            <option>Kochi</option>
+            <option>Ernakulam</option>
+            <option>Aluva</option>
+        </select>
+
+        <!-- Expiry Time -->
+        <input type="datetime-local" id="expiry" required>
+
+        <!-- Contact -->
+        <input type="tel" id="contact" placeholder="Contact Number" required>
+
+        <!-- Safety Checklist -->
+        <div class="checklist">
+            <label>
+                <input type="checkbox" id="packed"> Packed Properly
+            </label><br>
+            <label>
+                <input type="checkbox" id="stored"> Stored Safely
+            </label><br>
+            <label>
+                <input type="checkbox" id="prepared"> Prepared within 4 hrs
+            </label>
+        </div>
+
+        <!-- Notes -->
+        <textarea id="notes" placeholder="Additional Notes"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn primary-btn">Submit</button>
+
+    </form>
+</section>
+
+<script src="donor.js"></script>
+</body>
+</html>

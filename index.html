@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoodBridge</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1>🌱 FoodBridge</h1>
+    <div class="nav-links">
+        <a href="donor.html">Donor</a>
+        <a href="ngo.html">NGO</a>
+        <a href="volunteer.html">Volunteer <span id="volunteerNavBadge" class="notif-badge"></span></a>
+        <a href="admin.html">Admin</a>
+        <a href="safety.html">Safety Guide</a>
+        <button id="darkToggle">🌙</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <h2>Bridging Surplus to Survival</h2>
+    <p>Reducing food waste. Fighting hunger. Building community.</p>
+</section>
+
+
+<section class="alert-banner" id="alertBanner" style="display:none;">
+</section>
+
+<section class="impact">
+    <h2>Our Impact</h2>
+    <div class="impact-container">
+        <div class="impact-card">
+            <h3 id="totalListings">0</h3>
+            <p>Total Listings</p>
+        </div>
+        <div class="impact-card">
+            <h3 id="mealsSaved">0</h3>
+            <p>Meals Saved</p>
+        </div>
+        <div class="impact-card">
+            <h3 id="co2Reduced">0</h3>
+            <p>CO₂ Reduced (kg)</p>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

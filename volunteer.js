@@ -1,0 +1,1 @@
+// All volunteer logic is handled by script.js

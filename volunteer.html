@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodBridge - Volunteer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>🌱 FoodBridge</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="donor.html">Donor</a>
+        <a href="ngo.html">NGO</a>
+        <a href="volunteer.html">Volunteer <span id="volunteerNavBadge" class="notif-badge"></span></a>
+        <a href="admin.html">Admin</a>
+    </div>
+</nav>
+<section class="profile-section">
+    <div class="profile-card">
+        <div class="profile-avatar">🙋</div>
+        <div class="profile-info">
+            <h3 id="volunteerName">Volunteer</h3>
+            <p id="volunteerLocation">📍 Not set</p>
+            <p>⭐ Points: <strong id="profilePoints">0</strong></p>
+            <p>📦 Deliveries: <strong id="totalDeliveries">0</strong></p>
+        </div>
+        <button class="btn primary-btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+</section>
+<section class="page-header">
+    <h1>Pickup Tasks</h1>
+    <h3>Your Points: <span id="volPoints">0</span> ⭐</h3>
+    <p id="pickupNotif" style="color:#FFA000; font-weight:600;"></p>
+</section>
+
+<section id="pickupContainer" class="card-container"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
