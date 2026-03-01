@@ -173,8 +173,8 @@ Trust points awarded to Donor (+10) and Volunteer (+10)
 
 ## Team Contributions
 
-- **Meghna Pradeep:** Frontend development, donor and NGO logic, trust system
-- **Annu Philip:** Volunteer flow, admin dashboard, UI design and styling
+- **Meghna Pradeep:** Frontend development,UI design & styling 
+- **Annu Philip:** Volunteer flow, admin dashboard, donor and NGO logic, trust system
 
 ---
 
