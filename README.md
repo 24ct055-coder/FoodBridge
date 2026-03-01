@@ -13,7 +13,7 @@
 - Member 2: Meghna Pradeep - Muthoot Institute of Technology and Science
 
 ### Hosted Project Link
-[https://24ct055-coder.github.io/FoodBridge/](https://24ct055-coder.github.io/FoodBridge/)
+https://69992d1466e3971732bb8df5--bespoke-frangollo-7c7764.netlify.app
 
 ### Project Description
 FoodBridge is a surplus food redistribution platform that connects food donors, NGOs and volunteers to reduce food waste and fight hunger. It features a trust-based verification system, urgency tracking and real-time impact metrics.
